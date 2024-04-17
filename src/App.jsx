@@ -22,6 +22,16 @@ const App = () => {
 
   const handleSendEmail = () => {
     sendCustomEmail(details);
+
+    // Exibe um alerta de que a mensagem foi enviada
+    alert('Email enviado com sucesso!');
+
+  // Limpa os campos do formulário
+    setDetails({
+      to_email: '',
+      subject: '',
+      message: ''
+  });
   };
 
   return (
